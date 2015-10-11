@@ -1,0 +1,64 @@
+#Ambiente
+{
+	background-color: $teal;
+	z-index: 150;
+	padding-top: 10%;
+	@include triangulo($teal);
+}
+.Ambiente-contenedor
+{
+	position: relative;
+	z-index: 100;
+	@include cuadricula(Ambiente-item, 2);
+	@include desde(tablet)
+	{
+		@include cuadricula(Ambiente-item, 3);
+	}
+	@include desde(web)
+	{
+		@include cuadricula(Ambiente-item, 4);
+	}
+}
+
+.Ambiente-item
+{
+	position: relative;
+	overflow: hidden;
+	img
+	{
+		transition: all .5s;
+		vertical-align: top;
+	}
+	.description
+	{
+		position: absolute;
+		opacity: 0;
+		transition: all .5s ease-in-out;;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0px 0px rgba(black, .8) inset;
+		top: 0px;
+		h3
+		{
+			width: 100%;
+			background-color: $ambar;
+			padding: 5% 0em;
+		}
+		p
+		{
+			color: white;
+		}
+	}
+	@include desde (web)
+	{
+		&:hover img
+		{
+			transform: scale(1.2);
+		}
+		&:hover .description
+		{
+			opacity: 1;
+			box-shadow: 20em 0px rgba(black, .8) inset;
+		}
+	}
+}

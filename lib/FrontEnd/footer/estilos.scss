@@ -1,0 +1,40 @@
+#Footer
+{
+	position: relative;
+	z-index: -1000;
+	height: 8em;
+	background-color: black;
+	padding-top: 10%;
+}
+.Footer-informacion
+{
+	color: white;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	line-height: 2em;
+	height: 2em;
+}
+
+.Footer-redesSociales
+{
+	width: 100%;
+	ul
+	{
+		display: flex;
+		justify-content: center;
+	}
+}
+.Redes-item
+{
+	list-style: none;
+	color: white;
+	a
+	{
+		padding: .4em;
+	}
+	i
+	{
+		color: white;
+	}
+}

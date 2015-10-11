@@ -1,0 +1,80 @@
+#Contacto
+{
+	background-color: $azulOscuro;
+	padding-top: 10%;
+	@include triangulo($azulOscuro);
+	@include linea($azulOscuro);
+}
+
+.Formulario-texto
+{
+	width: 100%;
+	border: 1px solid $gris;
+	background-color: #616161;
+	border-radius: .5em;
+	padding: 1em .7em;
+	color: white;
+	&:focus
+	{
+		outline: none;
+	}
+	&::-webkit-input-placeholder,
+	&:-moz-placeholder,
+	&:-ms-input-placeholde
+	{
+		color: white;
+	}
+}
+
+.Formulario-boton
+{
+	width: 100%;
+	background-color: $ambar;
+	border-radius: .5em;
+	padding: .7em .7em;
+	color: black;
+	font-weight: bold;
+	&:focus
+	{
+		outline: none;
+	}
+}
+
+.Contacto-informacion
+{
+	li
+	{
+		text-align: center;
+		list-style: none;
+		color: white;
+	}
+}
+
+.Contacto-informacion-direccion,
+.Contacto-informacion-telefono,
+.Contacto-informacion-email
+{
+	display: inline-block;
+	padding: .5em .5em;
+	margin: 2em 0em;
+	text-align: center;
+	color: white;
+	i
+	{
+		display: block;
+		margin: 0em auto;
+		font-size: 2.5em;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		border: 2px solid white;
+		line-height: 4rem;
+	}
+	span
+	{
+		display: block;
+		font-size: 1.1em;
+		width: 100%;
+		margin: .5rem 0rem;
+	}
+}

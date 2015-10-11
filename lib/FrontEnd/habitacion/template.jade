@@ -1,0 +1,32 @@
+section#Habitacion
+	.ed-container
+		.ed-item
+			h2.total.Seccion-titulo Habitaciones
+				hr.linea-titulo
+		- for (var i = 1; i<=4;i++)
+			article.ed-item.movil-100.tablet-50.web-25.Habitacion-contenido
+				p.Habitacion-tipo.centrar-texto Habitacion Simple
+				img(src="./public/img/habitacion-simple.jpg", alt="#", class="Habitacion-imagen")
+				div.Habitacion-detalle
+					ul
+						li.Habitacion-detalle-item
+							i.icon-water
+							span Baño con agua caliente
+						li.Habitacion-detalle-item
+							i.icon-t-shirt
+							span Lavanderia
+						li.Habitacion-detalle-item
+							i.icon-wifi
+							span WiFi
+						li.Habitacion-detalle-item
+							i.icon-coffee
+							span Servicio a la habitación
+						li.Habitacion-detalle-item
+							i.icon-videocam
+							span Seguridad permanente
+						li.Habitacion-detalle-item
+							i.icon-desktop
+							span TV Cable
+				div.Habitacion-precio.centrar-texto
+					//- span Precio:
+					span.Habitacion-precio-valor Precio: S/. 120.00

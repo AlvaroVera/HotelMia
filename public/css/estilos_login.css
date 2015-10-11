@@ -1,0 +1,98 @@
+*
+{
+	box-sizing: border-box;
+}
+body, html
+{
+	background-image: url('../img/background.png');
+	background-size: cover;
+	font-family: 'Oswald', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+.Contenedor
+{
+	margin: auto;
+	width: 100%;
+	height: 26em;
+	padding: 1em 0em;
+	display: flex;
+	position: relative;
+}
+.Formulario
+{
+	background-color: #FFC107;
+	margin: auto;
+	width: 100%;
+	height: 20em;
+	text-align: center;
+	padding: 1em;
+	position: absolute;
+	bottom: 0px;
+
+}
+.Formulario h1
+{
+	position: relative;
+	top: -4.5em;
+}
+.Formulario-logo
+{
+	display: inline-block;
+	margin: auto 0px;
+	position: relative;
+	top: -6em;
+	width: 10em;
+	height: 10em;
+	border-radius: 50%;
+	border: 2px solid Black;
+	overflow: hidden;
+}
+
+.Logo
+{
+	position: absolute;
+	width: 14em;
+	left: -2em;
+}
+.Formulario-contenido
+{
+	position: relative;
+	top: -7em;
+}
+.Formulario-texto{
+	width: 100%;
+	padding: 1em;
+	margin: .5em 0em;
+	border: none;
+	border-radius: 10px;
+}
+.Formulario-boton
+{
+	margin-top: 8px;
+	width: 50%;
+	padding: .5rem;
+	border-radius: 10px;
+	border: 2px solid black;
+	box-shadow: 2px 3px 0px 0px black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.Formulario-boton:hover
+{
+	margin-top: 10px;
+	margin-left: 1px;
+	box-shadow: 1px 1px 0px 0px black;
+}
+
+.Formulario-boton:focus
+{
+	outline: none;
+}
+
+.Formulario-texto:focus{
+	outline: none;
+}

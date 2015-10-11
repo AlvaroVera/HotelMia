@@ -1,0 +1,24 @@
+@import "./normalize/_normalize.scss";
+// RESETEO NORMALIZE
+figure, hr, ul{
+	margin: 0px;
+	padding: 0px;
+}
+$ambar: #FFC107;
+$gris: #EEEEEE;
+$gris_oscuro: grey;
+$rojo: tomato;
+$teal: #009688;
+$cyan: #00BCD4;
+$azulOscuro: #2C3E50;
+
+
+@import "./ed-grid/ed-grid.scss";
+@import "./modulo/_general.scss";
+@import "./fontello/css/fontello.scss";
+@import './FrontEnd/header/estilos.scss';
+@import "./FrontEnd/slider/estilos.scss";
+@import "./FrontEnd/habitacion/estilos.scss";
+@import "./FrontEnd/ambiente/estilos.scss";
+@import "./FrontEnd/contacto/estilos.scss";
+@import "./FrontEnd/footer/estilos.scss";

@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.Seccion-titulo{
+	font-family: 'Open-Sans', sans-serif;
+	text-align: center;
+	height: 3.5rem;
+	line-height: 3rem;
+	color: white;
+	font-size: 2em;
+	position: relative;
+	margin-bottom: .5em;
+}
+
+.linea-titulo
+{
+	display: block;
+	width: 7em;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.5em;
+	bottom: -20%;
+	border: 1px solid white;
+	&::after
+	{
+		content: "\e802   \e802   \e802";
+		font-family: "fontello";
+		font-size: .5em;
+		background-color: $teal;
+		color: white;
+		padding: 0em .5em;
+		position: relative;
+		top: -1.8em;
+	}
+}
+
+
+@mixin triangulo($color) {
+	position: relative;
+	&::after,
+	&::before
+	{
+		content: "";
+		position: absolute;
+		z-index: -100;
+		bottom: 0px;
+		display: block;
+		height: 10em;
+		width: 60%;
+		background-color: $color;
+	}
+	&::before
+	{
+		transform: skewY(8deg);
+		left:0px;
+		transform-origin: bottom left;
+	}
+	&::after
+	{
+		transform: skewY(-8deg);
+		right: 0px;
+		transform-origin: bottom right;
+	}
+}
+
+@mixin linea($color) {
+	.linea-titulo
+	{
+		&::after
+		{
+			background-color: $color;
+		}
+	}
+}
